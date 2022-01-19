@@ -1,12 +1,7 @@
 import axios from 'axios';
 
-import { BASE_URL_API } from '../settings';
-
-function delay(ms) {
-  return new Promise((resolve) => {
-    setTimeout(resolve, ms);
-  });
-}
+import { POSTS_API } from '../settings';
+import { delay } from '../helpers/delay';
 
 const createPostsService = (baseUrl) => {
   return {
@@ -37,4 +32,4 @@ const createPostsService = (baseUrl) => {
   };
 };
 
-export const postsService = createPostsService(BASE_URL_API);
+export const postsService = createPostsService(POSTS_API);

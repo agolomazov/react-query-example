@@ -1,7 +1,19 @@
 body {
-  background-color: #f4ff0042;
-  font-size: 16px;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: yellow;
 }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
 
 button {
   padding: 5px 10px;
@@ -41,4 +53,12 @@ button {
 
 .action-buttons button {
   margin-right: 10px;
+}
+
+.loading {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  color: white;
+  z-index: 10;
 }
